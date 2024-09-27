@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="images/DYPCET_Logo.webp" alt="College Logo" />
+        <div class="clg_name">
+          D.Y. PATIL COLLEGE OF ENGINEERING AND TECHNOLOGY
+        </div>
+        <a href="event.html"><button>EVENT</button></a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <fieldset>
+        <div class="logo-container">
+          <img src="./images/DYPCET_Logo.webp" alt="College Logo" />
+        </div>
+        <legend>Login</legend>
+        <form>
+          <div class="user-type">
+            <label for="student">
+              <input
+                type="radio"
+                name="userType"
+                id="student"
+                value="student"
+                required
+              />
+              Student
+            </label>
+            <label for="faculty">
+              <input
+                type="radio"
+                name="userType"
+                id="faculty"
+                value="faculty"
+                required
+              />
+              Faculty
+            </label>
+            <label for="administrator">
+              <input
+                type="radio"
+                name="userType"
+                id="administrator"
+                value="administrator"
+                required
+              />
+              Administrator
+            </label>
+          </div>
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+
+          <button type="submit">Login</button>
+        </form>
+      </fieldset>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 D.Y. Patil College Of Engineering. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

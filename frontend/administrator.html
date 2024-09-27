@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrator Profile</title>
+    <link rel="stylesheet" href="administrator.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="images/DYPCET_Logo.webp" alt="College Logo" />
+        <div class="clg_name">
+          D.Y. PATIL COLLEGE OF ENGINEERING AND TECHNOLOGY
+        </div>
+        <button>EVENT</button>
+      </nav>
+    </header>
+
+    <main class="profile-container">
+      <h1>Administrator Profile</h1>
+      <div class="profile-content">
+        <h2>Manage Users</h2>
+        <div class="user-management">
+          <form class="user-form">
+            <label for="user-type">User Type:</label>
+            <select id="user-type" required>
+              <option value="student">Student</option>
+              <option value="faculty">Faculty</option>
+            </select>
+
+            <label for="user-name">Name:</label>
+            <input
+              type="text"
+              id="user-name"
+              placeholder="Enter Name"
+              required
+            />
+
+            <label for="user-email">Email:</label>
+            <input
+              type="email"
+              id="user-email"
+              placeholder="Enter Email"
+              required
+            />
+
+            <button type="submit">Add User</button>
+          </form>
+
+          <form class="user-remove-form">
+            <label for="remove-user-id">Remove User ID:</label>
+            <input
+              type="text"
+              id="remove-user-id"
+              placeholder="Enter User ID"
+              required
+            />
+
+            <button type="submit">Remove User</button>
+          </form>
+        </div>
+      </div>
+
+      <h2>Create Schedule</h2>
+      <form class="schedule-form">
+        <label for="schedule-day">Day:</label>
+        <select id="schedule-day" required>
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+        </select>
+
+        <label for="schedule-time">Time:</label>
+        <input
+          type="text"
+          id="schedule-time"
+          placeholder="Enter Time (e.g., 9:00 AM - 10:30 AM)"
+          required
+        />
+
+        <label for="schedule-subject">Subject:</label>
+        <input
+          type="text"
+          id="schedule-subject"
+          placeholder="Enter Subject"
+          required
+        />
+
+        <label for="schedule-location">Location:</label>
+        <input
+          type="text"
+          id="schedule-location"
+          placeholder="Enter Location"
+          required
+        />
+
+        <button type="submit">Create Schedule</button>
+      </form>
+
+      <h2>Current Schedule</h2>
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Subject</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>10:00 AM - 11:30 AM</td>
+            <td>Data Structures</td>
+            <td>Room 101</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>1:00 PM - 2:30 PM</td>
+            <td>Web Development</td>
+            <td>Room 102</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>11:00 AM - 12:30 PM</td>
+            <td>Database Systems</td>
+            <td>Room 103</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>9:00 AM - 10:30 AM</td>
+            <td>Operating Systems</td>
+            <td>Room 104</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>2:00 PM - 3:30 PM</td>
+            <td>Software Engineering</td>
+            <td>Room 105</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 D.Y. Patil College Of Engineering. All rights reserved.</p>
+    </footer>
+    <script src="administrator.js"></script>
+  </body>
+</html>

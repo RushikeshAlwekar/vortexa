@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faculty Profile</title>
+    <link rel="stylesheet" href="faculty.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="images/DYPCET_Logo.webp" alt="College Logo" />
+        <div class="clg_name">
+          D.Y. PATIL COLLEGE OF ENGINEERING AND TECHNOLOGY
+        </div>
+        <button>EVENT</button>
+      </nav>
+    </header>
+
+    <main class="profile-container">
+      <h1>Faculty Profile</h1>
+      <div class="profile-content">
+        <div class="profile-info">
+          <h2>Name: Dr. Jane Smith</h2>
+          <p>Education: Ph.D. in Computer Science</p>
+          <p>Subject: Data Structures</p>
+          <p>Email: janesmith@example.com</p>
+        </div>
+      </div>
+
+      <h2>Mark Student Attendance</h2>
+      <form class="attendance-form">
+        <label for="student-id">Student ID:</label>
+        <input
+          type="text"
+          id="student-id"
+          placeholder="Enter Student ID"
+          required
+        />
+
+        <label for="attendance-status">Attendance Status:</label>
+        <select id="attendance-status">
+          <option value="present">Present</option>
+          <option value="absent">Absent</option>
+          <option value="late">Late</option>
+        </select>
+
+        <button type="submit">Submit Attendance</button>
+      </form>
+
+      <h2>Class Schedule</h2>
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Subject</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>10:00 AM - 11:30 AM</td>
+            <td>Data Structures</td>
+            <td>Room 101</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>1:00 PM - 2:30 PM</td>
+            <td>Web Development</td>
+            <td>Room 102</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>11:00 AM - 12:30 PM</td>
+            <td>Database Systems</td>
+            <td>Room 103</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>9:00 AM - 10:30 AM</td>
+            <td>Operating Systems</td>
+            <td>Room 104</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>2:00 PM - 3:30 PM</td>
+            <td>Software Engineering</td>
+            <td>Room 105</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 D.Y. Patil College Of Engineering. All rights reserved.</p>
+    </footer>
+    <script src="faculty.js"></script>
+  </body>
+</html>
